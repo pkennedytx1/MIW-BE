@@ -20,6 +20,7 @@ export interface Exists {
   user: (where?: UserWhereInput) => Promise<boolean>;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface Node {}
 
 export type FragmentableArray<T> = Promise<Array<T>> & Fragmentable;
